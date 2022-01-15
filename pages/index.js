@@ -37,7 +37,7 @@ export default function Home() {
               🐟
             </button>
             <input
-              className="bg-gray-200 pr-2 pl-8 py-2 rounded-lg dark:bg-gray-700 w-96"
+              className="bg-gray-200 pr-2 pl-8 py-2 rounded-lg dark:bg-gray-700 w-60 md:w-96"
               placeholder="Thinking about..."
               onChange={handleChange}
               required
@@ -51,7 +51,7 @@ export default function Home() {
           {memoList.length >= 1 ? (
             memoList.map((memo, index) => {
               return (
-                <li className="card w-96" key={index}>
+                <li className="card w-80" key={index}>
                   {memo}
                 </li>
               );
