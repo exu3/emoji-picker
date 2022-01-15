@@ -19,8 +19,11 @@ export default function Home() {
   const handleSubmit = (e) => {
     // prevent page from refreshing on submit
     e.preventDefault();
-    setMemoList([memo, ...memoList]);
-    // Clear input by resetting state? It no work :(
+    if (memo != "") {
+      setMemoList([memo, ...memoList]);
+    } else {
+      alert("can't be empty");
+    }
     setMemo("");
   };
   return (
@@ -39,8 +42,8 @@ export default function Home() {
             <input
               className="bg-gray-200 pr-2 pl-8 py-2 rounded-lg dark:bg-gray-700 w-60 md:w-96"
               placeholder="Thinking about..."
+              value={memo}
               onChange={handleChange}
-              required
             />
             <button className="btn" type="submit" onClick={handleSubmit}>
               Yeet
