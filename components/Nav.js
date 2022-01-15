@@ -14,7 +14,7 @@ export default function Nav() {
       <ul className="flex flex-wrap justify-between items-center p-6">
         <img
           className="w-8 h-8 rounded-full"
-          src="https://github.com/eilla1.png"
+          src="https://emoji.slack-edge.com/T0266FRGM/deer-thoughts-head-full/6fc567bab7b2b142.png"
           alt="logo"
         />
         <ul className="mx-0 flex flex-row space-x-5">
