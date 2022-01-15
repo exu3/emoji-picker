@@ -40,19 +40,24 @@ export default function Home() {
               className="bg-gray-200 pr-2 pl-8 py-2 rounded-lg dark:bg-gray-700 w-96"
               placeholder="Thinking about..."
               onChange={handleChange}
+              required
             />
             <button className="btn" type="submit" onClick={handleSubmit}>
               Yeet
             </button>
           </div>
         </form>
-        <ul className="text-center mt-6">
+        <ul className="mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
           {memoList.length >= 1 ? (
             memoList.map((memo, index) => {
-              return <li key={index}>{memo}</li>;
+              return (
+                <li className="card w-96" key={index}>
+                  {memo}
+                </li>
+              );
             })
           ) : (
-            <p className="text-gray-400 text-center py-6 font-semibold">
+            <p className="text-gray-400 text-center py-6 font-semibold md:col-span-2">
               Nothing here yet...
             </p>
           )}
