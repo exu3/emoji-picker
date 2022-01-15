@@ -2,9 +2,9 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 
 const links = [
-  { label: "Page 1", href: "/" },
-  { label: "Page 2", href: "/" },
-  { label: "Page 3", href: "/" },
+  // { label: "Page 1", href: "/" },
+  // { label: "Page 2", href: "/" },
+  // { label: "Page 3", href: "/" },
 ];
 
 export default function Nav() {

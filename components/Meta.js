@@ -1,8 +1,8 @@
 import Head from "next/head";
 
 export default function Meta({ title }) {
-  const siteTitle = "Wahoo Land";
-  const description = "Wahoo, some boilerplate.";
+  const siteTitle = "Wahoo";
+  const description = "Wahoo";
   const keywords = "wahoo";
   const author = "Ella";
   const twitter = "@ella";
